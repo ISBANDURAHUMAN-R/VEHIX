@@ -1,0 +1,7 @@
+fastapi==0.111.0
+uvicorn[standard]==0.30.0
+python-dotenv==1.0.1
+ultralytics==8.2.20
+opencv-python==4.10.0.82
+numpy<2
+pydantic==2.8.2
