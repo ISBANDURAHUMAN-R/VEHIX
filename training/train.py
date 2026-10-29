@@ -17,7 +17,14 @@ def parse_args():
 def main():
     args = parse_args()
     model_path = args.model
-    # Load model (will download if not present)
+
+    # Check for local backend weights fallback
+    if not Path(model_path).exists():
+        backend_weights = Path(__file__).resolve().parent.parent / "backend" / "models" / "yolov8n.pt"
+        if backend_weights.exists():
+            model_path = str(backend_weights)
+
+    print(f"Loading base YOLO model from: {model_path}")
     model = YOLO(model_path)
     model.train(
         data=args.data,
@@ -27,8 +34,7 @@ def main():
         project=args.project,
         name=args.name,
     )
-    # After training, the best model is saved as best.pt in the run folder.
-    # Users should copy it to backend/models/ as needed.
+    print("Training complete. The best checkpoint is saved in the experiment run folder.")
 
 if __name__ == "__main__":
     main()
