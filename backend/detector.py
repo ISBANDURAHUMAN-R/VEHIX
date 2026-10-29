@@ -1,3 +1,4 @@
+import functools
 import os
 import uuid
 from pathlib import Path
@@ -5,8 +6,20 @@ from typing import List, Dict
 
 import cv2
 import numpy as np
-from ultralytics import YOLO
+import torch
 
+# PyTorch 2.6+ changed torch.load default to weights_only=True which breaks YOLO checkpoint unpickling.
+_orig_torch_load = torch.load
+
+@functools.wraps(_orig_torch_load)
+def _patched_torch_load(*args, **kwargs):
+    if "weights_only" not in kwargs:
+        kwargs["weights_only"] = False
+    return _orig_torch_load(*args, **kwargs)
+
+torch.load = _patched_torch_load
+
+from ultralytics import YOLO
 from dotenv import load_dotenv
 
 load_dotenv()
