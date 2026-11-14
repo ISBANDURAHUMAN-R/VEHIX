@@ -8,11 +8,11 @@
 VEHIX is a computer vision platform designed for traffic monitoring, road surveillance, and vehicle classification. It pairs a high-performance FastAPI backend executing Ultralytics YOLOv8 inference with a modern React dashboard to process images, identify vehicle categories, and compute traffic metrics.
 
 ## ❖ Key Features
-- ▪ Neural object detection and bounding box localization using YOLOv8 nano models.
-- ▫ Multi-class categorization isolating cars, buses, trucks, motorcycles, and bicycles.
-- ▴ Automated per-class vehicle counting and visual distribution metrics.
-- ▿ Image generation with rendered bounding boxes, labels, and percentage confidence markers.
-- ⬡ Web analytics dashboard featuring donut breakdown charts and detection coordinate tables.
+- Neural object detection and bounding box localization using YOLOv8 nano models.
+- Multi-class categorization isolating cars, buses, trucks, motorcycles, and bicycles.
+- Automated per-class vehicle counting and visual distribution metrics.
+- Image generation with rendered bounding boxes, labels, and percentage confidence markers.
+- Web analytics dashboard featuring donut breakdown charts and detection coordinate tables.
 
 ## ⬢ Technologies Used
 - Python 3.10+
