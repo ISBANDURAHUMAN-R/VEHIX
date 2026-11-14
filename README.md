@@ -4,7 +4,7 @@
 
 <div align="center">
 
-# 🚗 VEHIX — Intelligent Vehicle Detection System
+# ◈ VEHIX — Intelligent Vehicle Detection System
 
 **AI-powered real-time vehicle detection, classification, counting, and visual analytics platform.**
 
@@ -20,26 +20,26 @@
 
 ---
 
-## 📌 Overview
+## ✦ Overview
 
 **VEHIX** is an end-to-end computer vision platform designed for intelligent traffic and road surveillance analysis. By combining a **FastAPI** backend with **Ultralytics YOLOv8** neural detection and a reactive **Vite + React + Tailwind CSS** frontend, VEHIX transforms raw road imagery into structured vehicle metrics, category counts, confidence ratings, and annotated visual outputs.
 
 ---
 
-## ✨ Key Features
+## ❖ Key Features
 
-- 🚘 **Neural Object Detection**: Utilizes YOLOv8 for precise vehicle localization.
-- 🏷️ **Multi-Class Vehicle Classification**: Detects and categorizes `cars`, `buses`, `trucks`, `motorcycles`, and `bicycles`.
-- 🔢 **Automated Vehicle Counting**: Real-time aggregation per vehicle class with visual distribution metrics.
-- 🖼️ **Annotated Image Generation**: Automatic rendering of colored bounding boxes, labels, and percentage confidence scores onto images.
-- 📊 **Interactive Analytics Dashboard**: Donut charts, category breakdown progress bars, and full detection coordinate inspection tables.
-- ⚡ **Asynchronous REST API**: High-performance FastAPI endpoints with automated OpenAPI / Swagger interactive documentation.
-- 🌐 **Modern Glassmorphic UI**: Built with dark mode, fluid micro-animations, and full responsive design.
-- 🚀 **One-Click Startup**: Windows PowerShell launcher to initialize backend and frontend environments automatically.
+- ▪ **Neural Object Detection**: Utilizes YOLOv8 for precise vehicle localization.
+- ▫ **Multi-Class Vehicle Classification**: Detects and categorizes `cars`, `buses`, `trucks`, `motorcycles`, and `bicycles`.
+- ▴ **Automated Vehicle Counting**: Real-time aggregation per vehicle class with visual distribution metrics.
+- ▿ **Annotated Image Generation**: Automatic rendering of colored bounding boxes, labels, and percentage confidence scores onto images.
+- ⬡ **Interactive Analytics Dashboard**: Donut charts, category breakdown progress bars, and full detection coordinate inspection tables.
+- ⬢ **Asynchronous REST API**: High-performance FastAPI endpoints with automated OpenAPI / Swagger interactive documentation.
+- ● **Modern Glassmorphic UI**: Built with dark mode, fluid micro-animations, and full responsive design.
+- · **One-Click Startup**: Windows PowerShell launcher to initialize backend and frontend environments automatically.
 
 ---
 
-## 🧠 System Architecture
+## ⬡ System Architecture
 
 ```text
 ┌──────────────────────┐         ┌────────────────────────┐         ┌────────────────────────┐
@@ -59,7 +59,7 @@
 
 ---
 
-## 📂 Project Structure
+## □ Project Structure
 
 ```text
 VEHIX/
@@ -104,7 +104,7 @@ VEHIX/
 
 ---
 
-## 🚀 Getting Started
+## ▲ Getting Started
 
 ### Prerequisites
 
@@ -183,7 +183,7 @@ npm run dev
 
 ---
 
-## 📡 API Reference
+## § API Reference
 
 ### Health Check
 
@@ -242,21 +242,21 @@ Content-Type: multipart/form-data
 
 ---
 
-## 🎯 Model & Detection Classes
+## ▸ Model & Detection Classes
 
 VEHIX uses the **YOLOv8 Nano (`yolov8n.pt`)** model optimized for high-speed inference on CPU and GPU devices. The detection pipeline specifically isolates and classifies the following vehicle categories:
 
 | Class | Icon | Color Marker |
 | :--- | :---: | :--- |
-| **Car** | 🚗 | Cyan (`#06b6d4`) |
-| **Bus** | 🚌 | Emerald (`#10b981`) |
-| **Truck** | 🚚 | Amber (`#f59e0b`) |
-| **Motorcycle** | 🏍️ | Rose (`#f43f5e`) |
-| **Bicycle** | 🚲 | Purple (`#8b5cf6`) |
+| **Car** | [CAR] | Cyan (`#06b6d4`) |
+| **Bus** | [BUS] | Emerald (`#10b981`) |
+| **Truck** | [TRUCK] | Amber (`#f59e0b`) |
+| **Motorcycle** | [MOTO] | Rose (`#f43f5e`) |
+| **Bicycle** | [BIKE] | Purple (`#8b5cf6`) |
 
 ---
 
-## 🛠️ Tech Stack
+## ◎ Tech Stack
 
 - **Machine Learning**: [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics), [OpenCV](https://opencv.org/), [NumPy](https://numpy.org/)
 - **Backend API**: [FastAPI](https://fastapi.tiangolo.com/), [Uvicorn](https://www.uvicorn.org/), [Pydantic v2](https://docs.pydantic.dev/)
@@ -267,7 +267,7 @@ VEHIX uses the **YOLOv8 Nano (`yolov8n.pt`)** model optimized for high-speed inf
 
 ---
 
-## 👨‍💻 Author
+## ※ Author
 
 **Isbandu Rahuman R.**
 - AI & Data Science Developer
@@ -275,6 +275,6 @@ VEHIX uses the **YOLOv8 Nano (`yolov8n.pt`)** model optimized for high-speed inf
 
 ---
 
-## 📄 License
+## ■ License
 
 This project is licensed under the [MIT License](LICENSE) — free for educational and research use.
