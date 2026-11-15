@@ -4,8 +4,22 @@
 
 # ◈ VEHIX — Intelligent Vehicle Detection System
 
+[![CI](https://github.com/ISBANDURAHUMAN-R/VEHIX/actions/workflows/ci.yml/badge.svg)](https://github.com/ISBANDURAHUMAN-R/VEHIX/actions)
+
 ## ◆ About the Project
 VEHIX is a computer vision platform designed for traffic monitoring, road surveillance, and vehicle classification. It pairs a high-performance FastAPI backend executing Ultralytics YOLOv8 inference with a modern React dashboard to process images, identify vehicle categories, and compute traffic metrics.
+
+```mermaid
+flowchart TD
+    Video["Traffic Camera Feed / Surveillance Frames"] --> Ingest["FastAPI Ingestion Endpoint"]
+    Ingest --> Pre["Image Preprocessing (OpenCV Resize & Normalization)"]
+    Pre --> YOLO["Ultralytics YOLOv8 Neural Inference"]
+    YOLO --> BBox["Bounding Box & Confidence Localization"]
+    BBox --> Class["Multi-Class Vehicle Classification<br/>(Cars, Trucks, Buses, Motorcycles)"]
+    Class --> Density["Traffic Density & Flow Counter Engine"]
+    Density --> API["FastAPI JSON Telemetry + Annotated Frames"]
+    API --> UI["React 18 & Recharts Analytics Dashboard"]
+```
 
 ## ❖ Key Features
 - Neural object detection and bounding box localization using YOLOv8 nano models.
