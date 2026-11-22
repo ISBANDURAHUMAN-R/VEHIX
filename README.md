@@ -11,14 +11,14 @@ VEHIX is a computer vision platform designed for traffic monitoring, road survei
 
 ```mermaid
 flowchart TD
-    Video["Traffic Camera Feed /<br/>Surveillance Frames"] --> Ingest["FastAPI Ingestion<br/>Endpoint"]
-    Ingest --> Pre["Image Preprocessing<br/>(OpenCV Resize & Normalization)"]
-    Pre --> YOLO["Ultralytics YOLOv8<br/>Neural Inference"]
-    YOLO --> BBox["Bounding Box &amp;<br/>Confidence Localization"]
-    BBox --> Class["Multi-Class Vehicle Classification<br/>(Cars, Trucks, Buses, Bikes)"]
-    Class --> Density["Traffic Density &amp;<br/>Flow Counter Engine"]
-    Density --> API["FastAPI JSON Telemetry +<br/>Annotated Frames"]
-    API --> UI["React 18 & Recharts<br/>Analytics Dashboard"]
+    Video["&nbsp; Traffic Camera Feed / &nbsp;<br/>&nbsp; Surveillance Frames &nbsp;"] --> Ingest["&nbsp; FastAPI Ingestion &nbsp;<br/>&nbsp; Endpoint &nbsp;"]
+    Ingest --> Pre["&nbsp; Image Preprocessing &nbsp;<br/>&nbsp; (OpenCV Resize &amp; Norm) &nbsp;"]
+    Pre --> YOLO["&nbsp; Ultralytics YOLOv8 &nbsp;<br/>&nbsp; Neural Inference &nbsp;"]
+    YOLO --> BBox["&nbsp; Bounding Box &amp; &nbsp;<br/>&nbsp; Confidence Localization &nbsp;"]
+    BBox --> Class["&nbsp; Multi-Class Vehicle &nbsp;<br/>&nbsp; (Cars, Trucks, Buses) &nbsp;"]
+    Class --> Density["&nbsp; Traffic Density &amp; &nbsp;<br/>&nbsp; Flow Counter Engine &nbsp;"]
+    Density --> API["&nbsp; FastAPI JSON Telemetry &nbsp;<br/>&nbsp; + Annotated Frames &nbsp;"]
+    API --> UI["&nbsp; React 18 &amp; Recharts &nbsp;<br/>&nbsp; Analytics Dashboard &nbsp;"]
 ```
 
 ## ❖ Key Features
