@@ -11,14 +11,14 @@ VEHIX is a computer vision platform designed for traffic monitoring, road survei
 
 ```mermaid
 flowchart TD
-    Video["Traffic Camera Feed / Surveillance Frames"] --> Ingest["FastAPI Ingestion Endpoint"]
-    Ingest --> Pre["Image Preprocessing (OpenCV Resize & Normalization)"]
-    Pre --> YOLO["Ultralytics YOLOv8 Neural Inference"]
-    YOLO --> BBox["Bounding Box & Confidence Localization"]
-    BBox --> Class["Multi-Class Vehicle Classification<br/>(Cars, Trucks, Buses, Motorcycles)"]
-    Class --> Density["Traffic Density & Flow Counter Engine"]
-    Density --> API["FastAPI JSON Telemetry + Annotated Frames"]
-    API --> UI["React 18 & Recharts Analytics Dashboard"]
+    Video["Traffic Camera Feed /<br/>Surveillance Frames"] --> Ingest["FastAPI Ingestion<br/>Endpoint"]
+    Ingest --> Pre["Image Preprocessing<br/>(OpenCV Resize & Normalization)"]
+    Pre --> YOLO["Ultralytics YOLOv8<br/>Neural Inference"]
+    YOLO --> BBox["Bounding Box &amp;<br/>Confidence Localization"]
+    BBox --> Class["Multi-Class Vehicle Classification<br/>(Cars, Trucks, Buses, Bikes)"]
+    Class --> Density["Traffic Density &amp;<br/>Flow Counter Engine"]
+    Density --> API["FastAPI JSON Telemetry +<br/>Annotated Frames"]
+    API --> UI["React 18 & Recharts<br/>Analytics Dashboard"]
 ```
 
 ## ❖ Key Features
